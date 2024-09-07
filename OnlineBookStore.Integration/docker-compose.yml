@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  onlinebookstore.integration:
+    image: ${DOCKER_REGISTRY-}onlinebookstoreintegration
+    build:
+      context: .
+      dockerfile: OnlineBookStore.Integration/Dockerfile
